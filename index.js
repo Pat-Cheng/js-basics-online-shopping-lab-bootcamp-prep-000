@@ -25,7 +25,7 @@ function viewCart() {
   var phrase=''
   if(cart.length>0){
     if(cart.length===1){
-      phrase+=`In your cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}.`
+      phrase+=`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`
     }
     else{
       phrase+=`In your cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}, and `
