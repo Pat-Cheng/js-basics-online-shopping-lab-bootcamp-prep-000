@@ -50,8 +50,8 @@ function viewCart() {
 function total() {
   // write your code here
   var total=0
-  for(var x=0;x<cart.length-1;x++){
-    total += parseInt(cart[x].itemPrice)
+  for(var x=0;x<cart.length;x++){
+    total += cart[x].itemPrice
   }
   return total
 }
