@@ -36,7 +36,7 @@ function viewCart() {
     }
   }
   else{
-    phrase="Your shopping cart is empty"
+    phrase="Your shopping cart is empty."
   } 
   return phrase
 }
