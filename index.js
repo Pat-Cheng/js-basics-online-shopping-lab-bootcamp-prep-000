@@ -25,14 +25,14 @@ function viewCart() {
   var phrase=''
   if(cart.length>0){
     if(cart.length===1){
-      phrase+=`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`
+      phrase+=`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
     }
     else{
-      phrase+=`In your cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}, and `
+      phrase+=`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and `
       for(var x=1;x<cart.length-2;x++){
-        phrase+=`${cart[x][itemName]} at ${cart[x][itemPrice]}, and `  
+        phrase+=`${cart[x].itemName} at $${cart[x].itemPrice}, and `  
       }
-      phrase+=`${cart[cart.length-1][itemName]} at ${cart[cart.length-1][itemPrice]}.`
+      phrase+=`${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
     }
   }
   else{
