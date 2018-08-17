@@ -17,6 +17,7 @@ function addToCart(item) {
 //   bject[itemPrice]=price
  
  cart.push(bject)
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
