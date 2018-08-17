@@ -33,11 +33,11 @@ function viewCart() {
       phrase+=`${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
     }
     else{
-      phrase+=`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and `
+      phrase+=`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, `
       for(var x=1;x<=cart.length-2;x++){
-        phrase+=`${cart[x].itemName} at $${cart[x].itemPrice}, and `  
+        phrase+=`${cart[x].itemName} at $${cart[x].itemPrice}, `  
       }
-      phrase+=`${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
+      phrase+=`and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
     }
     }
   }
