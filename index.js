@@ -25,10 +25,10 @@ function viewCart() {
   var phrase=''
   if(cart.length>0){
     if(cart.length===1){
-      phrase+=`In you cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}.`
+      phrase+=`In your cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}.`
     }
     else{
-      phrase+=`In you cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}, and `
+      phrase+=`In your cart, you have ${cart[0][itemName]} at ${cart[0][itemPrice]}, and `
       for(var x=1;x<cart.length-2;x++){
         phrase+=`${cart[x][itemName]} at ${cart[x][itemPrice]}, and `  
       }
